@@ -1,0 +1,150 @@
+// MAIN.scss
+
+@import "variables";
+
+body {
+	font-size: $body-font-size;
+	font-family: $body-font-family;
+	color: $body-color;
+	font-weight: $body-font-weight;
+	line-height: $body-line-height;
+	text-decoration: $body-text-decoration;
+}
+
+p {
+	font-size: $paragraph-font-size;
+	font-family: $paragraph-font-family;
+	color: $paragraph-color;
+	font-weight: $paragraph-font-weight;
+	line-height: $paragraph-line-height;
+	text-decoration: $paragraph-text-decoration;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $header-font-family;
+	color: $header-color;
+	font-weight: $header-font-weight;
+	line-height: $header-line-height;
+	text-decoration: $header-text-decoration;
+}
+
+h1 {
+	font-size: $header-h1-font-size;
+}
+
+h2 {
+	font-size: $header-h2-font-size;
+}
+
+h3 {
+	font-size: $header-h3-font-size;
+}
+
+h4 {
+	font-size: $header-h4-font-size;
+}
+
+h5 {
+	font-size: $header-h5-font-size;
+}
+
+h6 {
+	font-size: $header-h6-font-size;
+}
+
+a {
+	font-size: $link-font-size;
+	font-family: $link-font-family;
+	color: $link-color;
+	font-weight: $link-font-weight;
+	line-height: $link-line-height;
+	text-decoration: $link-text-decoration;
+	&:hover {
+		color: $link-on-hover-color;
+		text-decoration: $link-on-hover-text-decoration;
+	}
+}
+
+// Tablet Width
+@media only screen and (max-width : $tablet-max-width-in-px) {
+
+	body {
+		font-size: $tablet-font-size;
+	}
+}
+
+// Tablet Device Width
+@media only screen and (max-device-width : $tablet-max-width-in-px) {
+
+	body {
+		font-size: $tablet-device-font-size;
+	}
+}
+
+// Mobile Width
+@media only screen and (max-width : $mobile-max-width-in-px) {
+	
+	body {
+		font-size: $mobile-font-size;
+	}
+}
+
+// Mobile Device Width
+@media only screen and (min-device-width : $mobile-min-width-in-px) and (max-device-width : $mobile-max-width-in-px) {
+	
+	body {
+		font-size: $mobile-device-font-size;
+	}
+}
+
+// LAYOUT HTML CLASSES
+
+// .element-center
+.element-center {
+	float: none;
+	margin: 0 auto;
+}
+// .element-left
+.element-left {
+	float: left;
+}
+// .element-right
+.element-right {
+	float: right;
+}
+
+// STYLING HTML CLASSES
+
+// .text-align-center
+.text-center {
+	text-align: center;
+}
+// .text-align-left
+.text-left {
+	text-align: left;
+}
+// .text-align-right
+.text-right {
+	text-align: right;
+}
+// .text-align-justify
+.text-justify {
+	text-align: justify;
+}
+
+// .font-weight-ultrathin
+.font-weight-ultrathing {
+	font-weight: 100;
+}
+// .font-weight-thin
+.font-weight-thin {
+	font-weight: 200;
+}
+// .font-weight-normal
+.font-weight-normal {
+	font-weight: 400;
+}
+// .font-weight-bold
+.font-weight-bold {
+	font-weight: 600;
+}
