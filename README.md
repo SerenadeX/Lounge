@@ -9,7 +9,7 @@ You will need ghost, in order to use this theme. You can find ghost's download a
 <h4>Theme</h4>
 Navigate into your ghost folder and simply move the "lounge" folder into the <code>content/themes/</code> directory. <em>That's all!</em>
 
-<h3><s>Live Demo</s> (New version will be up in mid June)</h3>
+<h3><a href="http://lounge.kotarodesign.com">Live Demo</a></h3>
 
 <h3>Development</h3>
 I have coded this theme using SASS and those files are also available to you. Simply edit <code>style.scss</code> in <code>lounge/assets/sass</code> . To start running SASS, navigate into the <code>lounge/assets</code> directory and type <code>sass --watch sass:css</code> into terminal.
