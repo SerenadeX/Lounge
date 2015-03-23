@@ -9,7 +9,7 @@
 	5. Header
 	6. Main
 	7. Footer
-	8. Media Query for Screen & Device Widths below 801px 
+	8. Media Query for Screen & Device Widths below 801px
 	9. Additional Classes for Styling
 */
 /* ==================================================================== */
@@ -997,3 +997,8 @@ p.error {
 
 p.notice {
   border-top: 4px solid #e3b924; }
+
+
+#disqus_thread {
+  padding: 30px;
+}
