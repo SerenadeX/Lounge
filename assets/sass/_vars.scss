@@ -1,0 +1,27 @@
+
+/* ==================================================================== */
+/* 2. Variables */
+/* ==================================================================== */
+/* Variables, which may cause damage to the layout, if improperly configured, have not been added! */
+
+/* The variables below can be configured, but have an impact on the entire site. */
+// Font Sizes
+$font-size: 125%;
+$font-size-int: 1.25; // Font Size as integer. Used for Mixins
+$fallback-font-size: 20px; // Define the font-size in pixels to add a fallback option for browser without REM support
+
+// Font Families
+$body-font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
+$header-font-family: "Bitter", "Arvo", serif;
+$code-font-family: "Inconsolata", monospace, serif;
+
+// Colors
+$body-color: #222; // Possible Alternative: #26140a
+$link-color: #27977B; // Possible Alternative: #8a3601
+$code-color: #8a3601;
+
+/* These colors are only used for the additional classes supplied with this theme. */
+$update-color: #4398E3; // blue
+$success-color: #3ABA54; // green
+$error-color: #D14F4C; // red
+$notice-color: #E3B924; // yellow

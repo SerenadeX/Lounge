@@ -22,26 +22,13 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-audio,
-canvas,
-video {
+audio, canvas, video {
   display: inline-block; }
 
 /**
@@ -56,8 +43,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-[hidden],
-template {
+[hidden], template {
   display: none; }
 
 /* ==========================================================================
@@ -100,8 +86,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-a:active,
-a:hover {
+a:active, a:hover {
   outline: 0; }
 
 /* ==========================================================================
@@ -124,8 +109,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-b,
-strong {
+b, strong {
   font-weight: bold; }
 
 /**
@@ -152,10 +136,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: monospace, serif;
   font-size: 1em; }
 
@@ -180,8 +161,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-sub,
-sup {
+sub, sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -243,10 +223,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   /* 1 */
   font-size: 100%;
@@ -258,8 +235,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-button,
-input {
+button, input {
   line-height: normal; }
 
 /**
@@ -268,8 +244,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-button,
-select {
+button, select {
   text-transform: none; }
 
 /**
@@ -279,10 +254,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -291,16 +263,14 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
   cursor: default; }
 
 /**
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -323,15 +293,13 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -354,6 +322,10 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+@font-face {
+  font-family: 'AquilineTwo';
+  src: url('/assets/fonts/AquelineTwo.ttf') format('truetype'); }
 
 /* ==================================================================== */
 /* 2. Variables */
@@ -400,7 +372,7 @@ body {
   font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  color: #222222; }
+  color: #222; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -409,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Bitter", "Arvo", serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #222222; }
+  color: #222; }
 
 h1 {
   font-size: 50px;
@@ -444,7 +416,7 @@ p {
 
 /* Links */
 a {
-  color: #27977b;
+  color: #27977B;
   text-decoration: none;
   -webkit-transition: 0.3s ease;
   -moz-transition: 0.3s ease;
@@ -453,7 +425,7 @@ a {
   transition: 0.3s ease; }
 
 a:hover {
-  color: #222222;
+  color: #222;
   text-decoration: underline; }
 
 /* Images and Videos */
@@ -511,7 +483,7 @@ label {
 /* Input and Textareas */
 input, textarea {
   line-height: 1.5;
-  color: #222222;
+  color: #222;
   width: 240px;
   max-width: 96%;
   padding: 1% 2%;
@@ -527,9 +499,9 @@ input, textarea {
   -o-transition: box-shadow 0.2s ease;
   transition: box-shadow 0.2s ease; }
   input:active, input:focus, textarea:active, textarea:focus {
-    -webkit-box-shadow: 0 0 4px 0 #27977b;
-    -moz-box-shadow: 0 0 4px 0 #27977b;
-    box-shadow: 0 0 4px 0 #27977b; }
+    -webkit-box-shadow: 0 0 4px 0 #27977B;
+    -moz-box-shadow: 0 0 4px 0 #27977B;
+    box-shadow: 0 0 4px 0 #27977B; }
 
 /* Textarea Specific */
 textarea {
@@ -560,7 +532,7 @@ button, input[type="submit"], a.button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  background: #27977b;
+  background: #27977B;
   border: solid 1px #1f7761;
   -webkit-box-shadow: 0 2px 0 0 #1f7761;
   -moz-box-shadow: 0 2px 0 0 #1f7761;
@@ -592,9 +564,9 @@ a#blog-logo img {
   margin: 0px 30px 0px 30px;
   margin: 0rem 1.5rem 0rem 1.5rem;
   border: 4px solid white;
-  -webkit-box-shadow: 1px 1px 2px 0 #222222;
-  -moz-box-shadow: 1px 1px 2px 0 #222222;
-  box-shadow: 1px 1px 2px 0 #222222;
+  -webkit-box-shadow: 1px 1px 2px 0 #222;
+  -moz-box-shadow: 1px 1px 2px 0 #222;
+  box-shadow: 1px 1px 2px 0 #222;
   -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
@@ -618,7 +590,7 @@ h1.blog-title {
   font-size: 3rem;
   margin: 10px 30px 10px 30px;
   margin: 0.5rem 1.5rem 0.5rem 1.5rem;
-  text-shadow: 1px 1px 2px #222222;
+  text-shadow: 1px 1px 2px #222;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
   h1.blog-title a {
     font-family: "Bitter", "Arvo", serif;
@@ -640,7 +612,7 @@ h2.blog-description {
   font-weight: 300;
   color: #fff;
   padding: 0;
-  text-shadow: 1px 1px 2px #222222;
+  text-shadow: 1px 1px 2px #222;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
 
 /* ==================================================================== */
@@ -656,9 +628,9 @@ main.content {
   margin: 0 auto;
   text-shadow: 0 1px 0 #fff;
   background: #fffcf3 url(../imgs/bg.jpg);
-  -webkit-box-shadow: 0 -2px 2px 0 #666666;
-  -moz-box-shadow: 0 -2px 2px 0 #666666;
-  box-shadow: 0 -2px 2px 0 #666666;
+  -webkit-box-shadow: 0 -2px 2px 0 #666;
+  -moz-box-shadow: 0 -2px 2px 0 #666;
+  box-shadow: 0 -2px 2px 0 #666;
   -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.1); }
@@ -667,10 +639,10 @@ main.content {
     max-width: 40rem;
     margin: 0 auto;
     width: auto;
-    background: white url(../imgs/bg-article.jpg);
-    -webkit-box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #cccccc;
-    -moz-box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #cccccc;
-    box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #cccccc; }
+    background: #fff url(../imgs/bg-article.jpg);
+    -webkit-box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #ccc;
+    -moz-box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #ccc;
+    box-shadow: 0 2px 0 0 #4f3323, 0 0 2px 0 #ccc; }
 
 /* ==================================== */
 /* Displayed in every Article */
@@ -687,16 +659,16 @@ div.post-meta {
   width: 100%;
   border-bottom: 2px solid #e5e5e5;
   cursor: default;
-  -webkit-box-shadow: 0 1px 0 0 white;
-  -moz-box-shadow: 0 1px 0 0 white;
-  box-shadow: 0 1px 0 0 white; }
+  -webkit-box-shadow: 0 1px 0 0 #fff;
+  -moz-box-shadow: 0 1px 0 0 #fff;
+  box-shadow: 0 1px 0 0 #fff; }
   div.post-meta time {
     font-size: 30px;
     font-size: 1.5rem;
     padding: 0px 10px 0px 10px;
     padding: 0rem 0.5rem 0rem 0.5rem;
     font-weight: 300;
-    background: white url(../imgs/bg-article.jpg); }
+    background: #fff url(../imgs/bg-article.jpg); }
   div.post-meta p.post-tags {
     padding: 0;
     margin: 0;
@@ -718,10 +690,10 @@ h2.post-title {
   word-wrap: break-word;
   cursor: default; }
   h2.post-title a {
-    color: #222222;
+    color: #222;
     text-decoration: none; }
     h2.post-title a:hover {
-      color: #27977b; }
+      color: #27977B; }
 
 /* Index: Post Excerpt */
 section.post-excerpt {
@@ -873,10 +845,10 @@ footer.site-footer {
     font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
-    color: #222222; }
+    color: #222; }
     footer.site-footer div.inner a {
       text-decoration: none;
-      color: #222222; }
+      color: #222; }
       footer.site-footer div.inner a:hover {
         text-decoration: underline; }
 
@@ -902,17 +874,17 @@ a.subscribe {
     margin: 40px 0px 0px 0px;
     margin: 2rem 0rem 0rem 0rem;
     width: 100%; }
-
   div.vertical {
     /* Background Fix */
     /* Set the Header Background Image to scroll, in order to display properly on small screens */
     background-attachment: scroll !important; } }
+
 /* ==================================================================== */
 /* 9. Additional Classes for Styling */
 /* ==================================================================== */
 /* Custom Buttons */
 button.update, a.update {
-  background: #4398e3;
+  background: #4398E3;
   border: solid 1px #2184dc;
   -webkit-box-shadow: 0 2px 0 0 #2184dc;
   -moz-box-shadow: 0 2px 0 0 #2184dc;
@@ -928,7 +900,7 @@ button.update, a.update {
     background: #2184dc; }
 
 button.success, a.success {
-  background: #3aba54;
+  background: #3ABA54;
   border: solid 1px #309b46;
   -webkit-box-shadow: 0 2px 0 0 #309b46;
   -moz-box-shadow: 0 2px 0 0 #309b46;
@@ -944,7 +916,7 @@ button.success, a.success {
     background: #309b46; }
 
 button.error, a.error {
-  background: #d14f4c;
+  background: #D14F4C;
   border: solid 1px #c23532;
   -webkit-box-shadow: 0 2px 0 0 #c23532;
   -moz-box-shadow: 0 2px 0 0 #c23532;
@@ -960,7 +932,7 @@ button.error, a.error {
     background: #c23532; }
 
 button.notice, a.notice {
-  background: #e3b924;
+  background: #E3B924;
   border: solid 1px #c59f19;
   -webkit-box-shadow: 0 2px 0 0 #c59f19;
   -moz-box-shadow: 0 2px 0 0 #c59f19;
@@ -981,24 +953,19 @@ p.message {
   padding: 0.5rem 0.875rem 0.5rem 0.875rem;
   background: white;
   border: 1px solid #eee;
-  border-top: 4px solid #27977b;
+  border-top: 4px solid #27977B;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
 p.update {
-  border-top: 4px solid #4398e3; }
+  border-top: 4px solid #4398E3; }
 
 p.success {
-  border-top: 4px solid #3aba54; }
+  border-top: 4px solid #3ABA54; }
 
 p.error {
-  border-top: 4px solid #d14f4c; }
+  border-top: 4px solid #D14F4C; }
 
 p.notice {
-  border-top: 4px solid #e3b924; }
-
-
-#disqus_thread {
-  padding: 30px;
-}
+  border-top: 4px solid #E3B924; }

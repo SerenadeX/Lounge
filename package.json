@@ -1,0 +1,15 @@
+{
+  "name": "Lounge",
+  "version": "1.0.0",
+  "description": "<h1>Lounge</h1> <em>An elegant blogging theme for coffee addicts!</em>",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.11",
+    "gulp-sass": "^1.3.3"
+  }
+}

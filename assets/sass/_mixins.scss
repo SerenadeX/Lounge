@@ -1,0 +1,131 @@
+/* ==================================================================== */
+/* 3. Mixins */
+/* ==================================================================== */
+
+/* Font Size REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin font-size($int) {
+	font-size: $int * $fallback-font-size;
+	font-size: $int * 1rem;
+}
+
+/* Margin REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin margin($margin-top, $margin-right, $margin-bottom, $margin-left) {
+	margin: $fallback-font-size*$margin-top $fallback-font-size*$margin-right $fallback-font-size*$margin-bottom $fallback-font-size*$margin-left;
+	margin: 1rem*$margin-top 1rem*$margin-right 1rem*$margin-bottom 1rem*$margin-left;
+}
+
+/* Padding REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+	padding: $fallback-font-size*$padding-top $fallback-font-size*$padding-right $fallback-font-size*$padding-bottom $fallback-font-size*$padding-left;
+	padding: 1rem*$padding-top 1rem*$padding-right 1rem*$padding-bottom 1rem*$padding-left;
+}
+
+/* Height REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin height($int) {
+	height: $int * $fallback-font-size;
+	height: $int * 1rem;
+}
+
+/* Height REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin width($int) {
+	width: $int * $fallback-font-size;
+	width: $int * 1rem;
+}
+
+/* Minimum Height REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin min-height($int) {
+	min-height: $int * $fallback-font-size;
+	min-height: $int * 1rem;
+}
+
+/* Maximum Height REM Fallback */
+/* Enter only an integer value, without the "rem" */
+@mixin max-width($int) {
+	max-width: $int * $fallback-font-size;
+	max-width: $int * 1rem;
+}
+
+/* Border Radius support for multiple browsers */
+@mixin border-radius($rad) {
+	-webkit-border-radius: $rad;
+	-moz-border-radius: $rad;
+	border-radius: $rad;
+}
+
+/* Rotation support for multiple browsers */
+@mixin rotate($deg) {
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+	transform: rotate($deg);
+}
+
+/* Transition support for multiple browsers */
+@mixin transition($time) {
+	-webkit-transition: $time ease;
+	-moz-transition: $time ease;
+	-ms-transition: $time ease;
+	-o-transition: $time ease;
+	transition: $time ease;
+}
+
+/* Specific Transition with additional property and easing variables */
+@mixin transition-spec($property, $time, $ease) {
+	-webkit-transition: $property $time $ease;
+	-moz-transition: $property $time $ease;
+	-ms-transition: $property $time $ease;
+	-o-transition: $property $time $ease;
+	transition: $property $time $ease;
+}
+
+/* Text Shadow with rgba option to modify opacity and set fallback */
+@mixin text-shadow($x, $y, $blur, $rgba-1, $rgba-2, $rgba-3, $opacity, $fallback) {
+	text-shadow: $x $y $blur $fallback;
+	text-shadow: $x $y $blur rgba($rgba-1, $rgba-2, $rgba-3, $opacity);
+}
+
+/* Box Shadow support for multiple browsers */
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+	-webkit-box-shadow: $x $y $blur $spread $color;
+	-moz-box-shadow: $x $y $blur $spread $color;
+	box-shadow: $x $y $blur $spread $color;
+}
+
+/* Multiple Box Shadows !MAX 2 */
+@mixin box-shadow-multi($x-1, $y-1, $blur-1, $spread-1, $color-1, $x-2, $y-2, $blur-2, $spread-2, $color-2) {
+	-webkit-box-shadow: $x-1 $y-1 $blur-1 $spread-1 $color-1, $x-2 $y-2 $blur-2 $spread-2 $color-2;
+	-moz-box-shadow: $x-1 $y-1 $blur-1 $spread-1 $color-1, $x-2 $y-2 $blur-2 $spread-2 $color-2;
+	box-shadow: $x-1 $y-1 $blur-1 $spread-1 $color-1, $x-2 $y-2 $blur-2 $spread-2 $color-2;
+}
+
+/* Box Shadow with rgba option to modify opacity and set fallback */
+@mixin box-shadow-rgba($x, $y, $blur, $spread, $rgba-1, $rgba-2, $rgba-3, $opacity, $fallback) {
+	-webkit-box-shadow: $x $y $blur $spread $fallback;
+	-moz-box-shadow: $x $y $blur $spread $fallback;
+	box-shadow: $x $y $blur $spread $fallback;
+	-webkit-box-shadow: $x $y $blur $spread rgba($rgba-1, $rgba-2, $rgba-3, $opacity);
+	-moz-box-shadow: $x $y $blur $spread rgba($rgba-1, $rgba-2, $rgba-3, $opacity);
+	box-shadow: $x $y $blur $spread rgba($rgba-1, $rgba-2, $rgba-3, $opacity);
+}
+
+/* Button styling for the default and supplied buttons */
+@mixin button($color) {
+	background: $color;
+	border: solid 1px darken($color, 8%);
+	-webkit-box-shadow: 0 2px 0 0 darken($color, 8%);
+	-moz-box-shadow: 0 2px 0 0 darken($color, 8%);
+	box-shadow: 0 2px 0 0 darken($color, 8%);
+	@include transition(0.3s);
+	&:hover {
+		color: darken(white, 8%);
+		text-decoration: none;
+		background: darken($color, 8%);
+	}
+}
