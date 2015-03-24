@@ -11,9 +11,17 @@ $font-size-int: 1.25; // Font Size as integer. Used for Mixins
 $fallback-font-size: 20px; // Define the font-size in pixels to add a fallback option for browser without REM support
 
 // Font Families
-$body-font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
-$header-font-family: "Bitter", "Arvo", serif;
+$body-font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+$header-font-family: "AquilineTwo", serif;
 $code-font-family: "Inconsolata", monospace, serif;
+
+// Font Weights
+$body-font-weight: 100;
+
+
+//Background colors
+$body-background-color: #91D2BD;
+$footer-background-color: hsla(160,89%,34%,1);
 
 // Colors
 $body-color: #222; // Possible Alternative: #26140a

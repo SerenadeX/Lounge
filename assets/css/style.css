@@ -325,7 +325,7 @@ table {
 
 @font-face {
   font-family: 'AquilineTwo';
-  src: url('/assets/fonts/AquelineTwo.ttf') format('truetype'); }
+  src: url('../fonts/AquilineTwo.ttf'); }
 
 /* ==================================================================== */
 /* 2. Variables */
@@ -369,8 +369,8 @@ html {
 
 /* Body */
 body {
-  font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   line-height: 1.5;
   color: #222; }
 
@@ -378,7 +378,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 40px 0px 0px 0px;
   margin: 2rem 0rem 0rem 0rem;
-  font-family: "Bitter", "Arvo", serif;
+  font-family: "AquilineTwo", serif;
   font-weight: 400;
   line-height: 1.2;
   color: #222; }
@@ -593,7 +593,7 @@ h1.blog-title {
   text-shadow: 1px 1px 2px #222;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
   h1.blog-title a {
-    font-family: "Bitter", "Arvo", serif;
+    font-family: "AquilineTwo", serif;
     font-weight: 300;
     color: #fff; }
     h1.blog-title a:hover {
@@ -608,7 +608,7 @@ h2.blog-description {
   font-size: 1.5rem;
   margin: 0px 30px 0px 30px;
   margin: 0rem 1.5rem 0rem 1.5rem;
-  font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #fff;
   padding: 0;
@@ -653,7 +653,7 @@ div.post-meta {
   margin: 0rem 0rem 2.5rem 0rem;
   height: 20px;
   height: 1rem;
-  font-family: "Bitter", "Arvo", serif;
+  font-family: "AquilineTwo", serif;
   text-align: center;
   color: #ccc;
   width: 100%;
@@ -672,7 +672,7 @@ div.post-meta {
   div.post-meta p.post-tags {
     padding: 0;
     margin: 0;
-    font-family: "Bitter", "Arvo", serif;
+    font-family: "AquilineTwo", serif;
     text-align: center;
     color: #ccc; }
 
@@ -820,7 +820,7 @@ nav.pagination {
   display: inline-block;
   cursor: default; }
   nav.pagination span {
-    font-family: "Bitter", "Arvo", serif;
+    font-family: "AquilineTwo", serif;
     color: #aaa;
     display: block; }
 
@@ -842,7 +842,7 @@ footer.site-footer {
     font-size: 0.875rem;
     margin: 47.5px 0px 0px 0px;
     margin: 2.375rem 0rem 0rem 0rem;
-    font-family: "Source Sans Pro", "Droid Sans", Helvetica, Arial, sans-serif;
+    font-family: "Avenir Next", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     text-align: center;
     color: #222; }
@@ -969,3 +969,27 @@ p.error {
 
 p.notice {
   border-top: 4px solid #E3B924; }
+
+div.post-meta time {
+  background: transparent; }
+
+h2.blog-description {
+  margin-top: 3rem; }
+
+header#site-head {
+  background: #0aa470; }
+
+main.content {
+  background: #91D2BD; }
+
+footer.site-footer {
+  background: #0aa470;
+  text-shadow: none;
+  color: #fff; }
+  footer.site-footer div.inner {
+    color: #fff; }
+    footer.site-footer div.inner a {
+      color: #999; }
+
+#disqus_thread {
+  padding: 30px; }

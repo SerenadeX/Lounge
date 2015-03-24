@@ -35,7 +35,7 @@ html {
 /* Body */
 body {
 	font-family: $body-font-family;
-	font-weight: 400;
+	font-weight: $body-font-weight;
 	line-height: 1.5;
 	color: $body-color;
 }

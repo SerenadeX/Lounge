@@ -1,0 +1,38 @@
+div.post-meta {
+  time {
+    background: transparent;
+  }
+}
+
+h2.blog-description {
+  margin-top: 3rem;
+}
+
+header#site-head {
+  background: $footer-background-color;
+}
+
+
+main.content {
+  background: $body-background-color;
+}
+
+footer.site-footer {
+  background: $footer-background-color;
+  text-shadow: none;
+  color: #fff;
+
+  div.inner {
+    color: #fff;
+
+    a {
+      color: #999;
+    }
+  }
+}
+
+
+
+#disqus_thread {
+  padding: 30px;
+}
