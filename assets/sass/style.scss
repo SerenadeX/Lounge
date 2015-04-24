@@ -2,15 +2,15 @@
 /* Tablet of Contents */
 /* ==================================================================== */
 /*
-	1. Import Normalize
-	2. Variables
-	3. Mixins
-	4. HTML Tag Styling
-	5. Header
-	6. Main
-	7. Footer
-	8. Media Query for Screen & Device Widths below 801px
-	9. Additional Classes for Styling
+1. Import Normalize
+2. Variables
+3. Mixins
+4. HTML Tag Styling
+5. Header
+6. Main
+7. Footer
+8. Media Query for Screen & Device Widths below 801px
+9. Additional Classes for Styling
 */
 
 
@@ -303,8 +303,8 @@ h2.post-title {
 }
 /* Index: Post Excerpt */
 section.post-excerpt {
-		@include padding(1.5, 1.5, 1.5, 1.5);
-		line-height: 1.5;
+	@include padding(1.5, 1.5, 1.5, 1.5);
+	line-height: 1.5;
 	p {
 		margin: 0;
 	}
@@ -398,8 +398,8 @@ hr.border-top, hr.border-bottom {
 /* hr.border-top creates the top margin and hr lines */
 hr.border-top {
 	margin: 3*$fallback-font-size auto 0 auto; // Top Margin
-    text-align: center;
-    border-bottom: 2px solid #e2dcd3; // hr line
+	text-align: center;
+	border-bottom: 2px solid #e2dcd3; // hr line
 }
 /* hr.body-bottom is only used for margin on the bottom and adding the circle into the center of the hr */
 hr.border-bottom {
@@ -416,9 +416,10 @@ nav.pagination {
 	display: inline-block;
 	cursor: default;
 	span {
-		font-family: $header-font-family;
-		color: #aaa;
+		font-family: "AquilineTwo", serif;
+		color: #EEE;
 		display: block;
+		text-shadow: none;
 	}
 }
 
@@ -444,7 +445,7 @@ footer.site-footer {
 		color: $body-color;
 		a {
 			text-decoration: none;
-			color: $body-color;
+			color: $body-background-color;
 			&:hover {
 				text-decoration: underline;
 			}

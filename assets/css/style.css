@@ -2,15 +2,15 @@
 /* Tablet of Contents */
 /* ==================================================================== */
 /*
-	1. Import Normalize
-	2. Variables
-	3. Mixins
-	4. HTML Tag Styling
-	5. Header
-	6. Main
-	7. Footer
-	8. Media Query for Screen & Device Widths below 801px
-	9. Additional Classes for Styling
+1. Import Normalize
+2. Variables
+3. Mixins
+4. HTML Tag Styling
+5. Header
+6. Main
+7. Footer
+8. Media Query for Screen & Device Widths below 801px
+9. Additional Classes for Styling
 */
 /* ==================================================================== */
 /* 1. Import Normalize */
@@ -378,7 +378,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 40px 0px 0px 0px;
   margin: 2rem 0rem 0rem 0rem;
-  font-family: "AquilineTwo", serif;
+  font-family: "Allura", serif;
   font-weight: 400;
   line-height: 1.2;
   color: #222; }
@@ -593,7 +593,7 @@ h1.blog-title {
   text-shadow: 1px 1px 2px #222;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); }
   h1.blog-title a {
-    font-family: "AquilineTwo", serif;
+    font-family: "Allura", serif;
     font-weight: 300;
     color: #fff; }
     h1.blog-title a:hover {
@@ -653,7 +653,7 @@ div.post-meta {
   margin: 0rem 0rem 2.5rem 0rem;
   height: 20px;
   height: 1rem;
-  font-family: "AquilineTwo", serif;
+  font-family: "Allura", serif;
   text-align: center;
   color: #ccc;
   width: 100%;
@@ -672,7 +672,7 @@ div.post-meta {
   div.post-meta p.post-tags {
     padding: 0;
     margin: 0;
-    font-family: "AquilineTwo", serif;
+    font-family: "Allura", serif;
     text-align: center;
     color: #ccc; }
 
@@ -821,8 +821,9 @@ nav.pagination {
   cursor: default; }
   nav.pagination span {
     font-family: "AquilineTwo", serif;
-    color: #aaa;
-    display: block; }
+    color: #EEE;
+    display: block;
+    text-shadow: none; }
 
 /* ==================================================================== */
 /* 7. Footer */
@@ -848,7 +849,7 @@ footer.site-footer {
     color: #222; }
     footer.site-footer div.inner a {
       text-decoration: none;
-      color: #222; }
+      color: #91D2BD; }
       footer.site-footer div.inner a:hover {
         text-decoration: underline; }
 
@@ -970,14 +971,19 @@ p.error {
 p.notice {
   border-top: 4px solid #E3B924; }
 
-div.post-meta time {
-  background: transparent; }
+div.post-meta {
+  height: auto; }
+  div.post-meta time {
+    background: transparent; }
 
 h2.blog-description {
   margin-top: 3rem; }
 
 header#site-head {
   background: #0aa470; }
+
+h1.blog-title a {
+  font-family: 'AquilineTwo'; }
 
 main.content {
   background: #91D2BD; }
@@ -988,8 +994,9 @@ footer.site-footer {
   color: #fff; }
   footer.site-footer div.inner {
     color: #fff; }
-    footer.site-footer div.inner a {
-      color: #999; }
+footer.post-footer .author h4 {
+  font-family: 'AquilineTwo', cursive;
+  font-size: 1.5rem; }
 
 #disqus_thread {
   padding: 30px; }

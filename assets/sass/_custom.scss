@@ -1,4 +1,6 @@
 div.post-meta {
+  height: auto;
+
   time {
     background: transparent;
   }
@@ -12,22 +14,28 @@ header#site-head {
   background: $footer-background-color;
 }
 
-
+h1.blog-title a {
+  font-family: 'AquilineTwo';
+}
 main.content {
   background: $body-background-color;
 }
 
-footer.site-footer {
-  background: $footer-background-color;
-  text-shadow: none;
-  color: #fff;
-
-  div.inner {
+footer {
+  &.site-footer {
+    background: $footer-background-color;
+    text-shadow: none;
     color: #fff;
 
-    a {
-      color: #999;
+    div.inner {
+      color: #fff;
     }
+  }
+
+  &.post-footer .author h4 {
+    font-family: 'AquilineTwo', cursive;
+    font-size: 1.5rem;
+
   }
 }
 

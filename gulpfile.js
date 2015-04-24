@@ -3,7 +3,11 @@ var sass = require('gulp-sass');
 
 gulp.task('sass', function() {
   gulp.src('./assets/sass/style.scss')
-  .pipe(sass())
+  .pipe(sass({
+    onError: function() {
+      console.log(arguments[0]);
+    }
+  }))
   .on('error', function(error) {
     console.log(error);
   })
